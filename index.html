@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastNews</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-wrap">
+        <!-- Гамбургер (только на мобилке) -->
+        <input type="checkbox" id="menuToggle" class="menu-toggle" />
+        <label for="menuToggle" class="menu-label">Меню</label>
+
+        <nav class="main-nav">
+          <ul>
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li><a href="index.html?section=Технологии">Технологии</a></li>
+            <li><a href="index.html?section=Авто">Авто</a></li>
+            <li><a href="index.html?section=Спорт">Спорт</a></li>
+            <li><a href="index.html?section=Кино">Кино</a></li>
+          </ul>
+        </nav>
+
+        <nav class="login-nav">
+          <ul>
+            <li><a href="#" class="login-btn" id="loginBtn">Войти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1 class="logo">Fast<span>News</span></h1>
+        <p>Новости, о которых говорят прямо сейчас</p>
+      </section>
+
+      <div class="main-content">
+        <div class="left-column">
+          <div class="big-news">
+            <img src="" alt="Главная" id="bigNewsImg" />
+            <div class="big-news-content">
+              <h2 id="bigNewsTitle">Загрузка...</h2>
+              <p id="bigNewsDesc"></p>
+              <div class="meta" id="bigNewsMeta"></div>
+            </div>
+          </div>
+
+          <div class="subcategory-block">
+            <h3 class="subcategory-title">Теннис</h3>
+            <div class="subcategory-layout">
+              <div class="sub-left" id="tennisMain"></div>
+              <div class="sub-right" id="tennisList"></div>
+            </div>
+          </div>
+
+          <div class="subcategory-block">
+            <h3 class="subcategory-title">Футбол</h3>
+            <div class="subcategory-layout">
+              <div class="sub-left" id="footballMain"></div>
+              <div class="sub-right" id="footballList"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-column">
+          <div class="section-block">
+            <h3 class="section-title">Главные новости</h3>
+            <div class="grid-right-3" id="featuredGrid"></div>
+          </div>
+
+          <div class="right-inner">
+            <div class="right-categories" id="categoryFeed"></div>
+            <div class="right-video">
+              <div class="video-block">
+                <h3 class="section-title">Видео</h3>
+                <div id="videoList"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Выпадающий список-->
+      <div class="bottom-dropdown">
+        <select>
+          <option>Главная</option>
+          <option>Категории</option>
+          <option>Контакты</option>
+        </select>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <p>© 2026 FastNews</p>
+        <ul>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Помощь</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

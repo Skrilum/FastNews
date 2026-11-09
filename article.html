@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastNews - Отдельная новость</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-wrap">
+        <input type="checkbox" id="menuToggle" class="menu-toggle" />
+        <label for="menuToggle" class="menu-label">Меню</label>
+
+        <nav class="main-nav">
+          <ul>
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li><a href="index.html?section=Технологии">Технологии</a></li>
+            <li><a href="index.html?section=Авто">Авто</a></li>
+            <li><a href="index.html?section=Спорт">Спорт</a></li>
+            <li><a href="index.html?section=Кино">Кино</a></li>
+          </ul>
+        </nav>
+
+        <nav class="login-nav">
+          <ul>
+            <li><a href="#" class="login-btn" id="loginBtn">Войти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="article-header">
+        <h1>Загрузка...</h1>
+        <div class="article-meta">
+          <span id="articleAuthor">Автор: -</span>
+          <span id="articleDate">Дата: -</span>
+          <span class="views">👁️ Просмотров: 0</span>
+        </div>
+        <p style="margin-top: 15px; color: #666" id="articleSection">
+          Рубрика: -
+        </p>
+      </article>
+
+      <div class="article-body">
+        <img src="" alt="" style="width: 100%" />
+        <p></p>
+      </div>
+
+      <section class="comments-section">
+        <h3>💬 Комментарии (0)</h3>
+        <div class="comment-list">
+          <p style="color: #999; padding: 15px 0">Загрузка комментариев...</p>
+        </div>
+        <div
+          style="
+            margin-top: 30px;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+          "
+        >
+          <h4 style="margin-bottom: 10px">Оставить комментарий</h4>
+          <form class="comment-form">
+            <textarea
+              placeholder="Напишите ваш комментарий..."
+              required
+            ></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          <p style="margin-top: 10px; font-size: 13px; color: #999">
+            * Комментировать могут только авторизованные пользователи.
+          </p>
+        </div>
+      </section>
+
+      <div class="bottom-dropdown">
+        <select>
+          <option>Главная</option>
+          <option>Категории</option>
+          <option>Контакты</option>
+        </select>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <p>© 2026 FastNews. Все права защищены.</p>
+        <ul>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Политика</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
